@@ -7,10 +7,9 @@ header{
     text-align: center;
 }
 h1{
-    animation-name: Anima;
-    animation-duration: 8s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation:
+    Anima 5s infinite linear alternate,
+    Mueve-texto 5s infinite linear alternate;
 }
 
 @keyframes Anima {
@@ -19,6 +18,15 @@ h1{
     }
     to{
         background:orange;
+    }
+}
+
+@keyframes Mueve-texto{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(200px);
     }
 }
 .section{
