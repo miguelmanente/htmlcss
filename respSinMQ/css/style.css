@@ -1,15 +1,38 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:azure;
+}
+header{
+    background-color: #ff0022;
+    text-align: center;
+}
+h1{
+    animation-name: Anima;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Anima {
+    from{
+        background: #ff0022;
+    }
+    to{
+        background:orange;
+    }
+}
 .section{
-    width: 90%;
+    width:100%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .img{
-    width: 300px;
+    width: 200px;
     aspect-ratio: 3/2;
     flex-grow: 1;
 }
