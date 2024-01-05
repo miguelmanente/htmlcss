@@ -32,7 +32,6 @@ h1{
 .section{
     width:100%;
     margin: 0 auto;
-    padding: 1rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -44,3 +43,7 @@ h1{
     aspect-ratio: 3/2;
     flex-grow: 1;
 }
+
+
+
+
