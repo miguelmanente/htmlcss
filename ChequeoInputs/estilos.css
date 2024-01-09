@@ -1,0 +1,10 @@
+.input-error {
+    border: 1px solid red; /* Ejemplo de estilo de borde rojo para resaltar el campo */
+    /* Otros estilos para resaltar */
+  }
+  
+.mensaje-error {
+    color: red; /* Estilo para el mensaje de error */
+    font-size: 0.8em; /* Tamaño de fuente del mensaje de error */
+  }
+  
