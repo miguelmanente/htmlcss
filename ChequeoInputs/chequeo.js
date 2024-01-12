@@ -5,19 +5,20 @@ const inputEmail = document.getElementById('email');
 
 form.addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
-  
     if (validarInputs()) {
       // Si la validación es exitosa, puedes enviar el formulario
       form.submit();
-    } else {
+     } else{
       // Si la validación falla, puedes mostrar un mensaje de error o realizar alguna otra acción
       //alert('Por favor completa los campos correctamente.');
 
        // Mostrar mensajes de error
-      mostrarError(inputNombre, 'Por favor ingresa un nombre válido', 'errorNombre');
-      mostrarError(inputEmail, 'Por favor ingresa un correo electrónico válido', 'errorEmail');
+        mostrarError(inputNombre, 'Por favor ingresa un nombre válido', 'errorNombre');
+        mostrarError(inputEmail, 'Por favor ingresa un correo electrónico válido', 'errorEmail');
+
     // Puedes agregar más llamadas a mostrarError() para otros campos del formulario
     }
+      
   });
 
   function validarInputs() {
@@ -26,7 +27,6 @@ form.addEventListener('submit', function(event) {
     // Validar el nombre
     if (inputNombre.value.trim() === '') {
       valido = false;
-    
     }
       // Agregar estilos de error o mensaje de error para el input de nombre
       // Ejemplo: inputNombre.style.border = '1px solid red';
@@ -73,7 +73,17 @@ form.addEventListener('submit', function(event) {
 
   function mostrarError(input, mensaje, idMensajeError) {
     const mensajeError = document.getElementById(idMensajeError);
-    mensajeError.textContent = mensaje;
-    input.classList.add('input-error');
+    if (input.value===''){
+      inputNombre.value='';
+      mensajeError.textContent = mensaje;
+      input.classList.add('input-error');
+    }
+
+    if (input.value===''){
+      inputEmail.value='';
+      mensajeError.textContent = mensaje;
+      input.classList.add('input-error');
+    }
+
     // Aquí puedes agregar estilos CSS para resaltar los campos con errores
   }

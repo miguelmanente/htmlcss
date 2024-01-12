@@ -1,3 +1,24 @@
+input{
+  width: 200px;
+  height: 20px;
+  display: block;
+  margin: 15px;
+}
+
+span{
+  margin-left: 20px;
+}
+
+button{
+  display: block;
+  margin-top: 10px;
+  width: 150px;
+  background-color: cornflowerblue;
+  font-size: 1em;
+  color:white;
+  margin-left: 30px;
+}
+
 .input-error {
     border: 1px solid red; /* Ejemplo de estilo de borde rojo para resaltar el campo */
     /* Otros estilos para resaltar */
@@ -5,6 +26,6 @@
   
 .mensaje-error {
     color: red; /* Estilo para el mensaje de error */
-    font-size: 0.8em; /* Tamaño de fuente del mensaje de error */
+    font-size: 1em; /* Tamaño de fuente del mensaje de error */
   }
   
