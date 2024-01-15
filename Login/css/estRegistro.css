@@ -3,35 +3,20 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
-	background: #E5E5E5;
+    font-family: Arial, Helvetica, sans-serif;
+	background-image: url(../imagenes/16316.jpg);
+
 }
-.cabecera{
+.cabecera h2{
     width: 95%;
+    height: 60px;
     margin: 0 auto;
+    padding-top: 1.5vh;
     text-align: center;
-    background-color: green;
     font-family: arial;
+    font-size: 2rem;
+    color: white;
     border-radius: 20px 20px 0px 0px;
-}
-
-.cabecera{
-    width: 95%;
-    padding: 1px;
-    color:white;
-    text-align: center;
-}
-
-.cabecera, h5{
-    width: 95%;
-    margin: 10px auto;
-}
-.titulo{
-    width: 95%;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2em;
-    margin-left: 100px;
 }
 
 main {
@@ -52,15 +37,17 @@ main {
 	font-weight: 700;
 	padding: 10px;
 	cursor: pointer;
+    color:#fff;
 }
 
 .formulario__grupo-input {
 	position: relative;
+    
 }
 
 .formulario__input {
 	width: 100%;
-	background: #fff;
+	background: #F2F1EB;
 	border: 3px solid transparent;
 	border-radius: 3px;
 	height: 45px;
@@ -76,7 +63,8 @@ main {
 }
 
 .formulario__input-error {
-	font-size: 12px;
+    color: #F66060;
+	font-size: 14px;
 	margin-bottom: 0;
 	display: none;
 }
@@ -131,8 +119,9 @@ main {
 	height: 45px;
 	line-height: 45px;
 	width: 30%;
-	background: #000;
-	color: #fff;
+	background:#7BD3EA;
+	color: blue;
+    font-size: 1em;
 	font-weight: bold;
 	border: none;
 	border-radius: 3px;
@@ -145,8 +134,8 @@ main {
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
+	font-size: 20px;
+	color: #B9F3FC;
 	display: none;
 }
 
@@ -175,14 +164,19 @@ main {
 
 
 footer{
-    width: 95%;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 2vh;
+    width: 100%;
     text-align: center;
-    background-color: green;
-    font-family: arial;
-    border-radius: 0px 0px 20px 20px;
+    color:aliceblue;
+}
+
+footer a{
+    color: #AEE2FF;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: blue;
 }
 
 
