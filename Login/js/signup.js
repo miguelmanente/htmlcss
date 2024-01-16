@@ -1,6 +1,7 @@
 const signupForm = document.querySelector('#form-login')
 signupForm.addEventListener('submit', (e)=>{
     e.preventDefault()
+    const name = document.querySelector('#name').value
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
 
@@ -10,7 +11,7 @@ signupForm.addEventListener('submit', (e)=>{
         return alert('El usuario ya esta registado!')
     }
 
-    Users.push({email: email, password: password})
+    Users.push({name:name, email: email, password: password})
     localStorage.setItem('users', JSON.stringify(Users))
     alert('Registro Exitoso!')
     window.location.href = 'index.html'

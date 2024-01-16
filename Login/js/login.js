@@ -1,6 +1,7 @@
-const loginForm = document.querySelector('#loginForm')
+const loginForm = document.querySelector('#form-login')
 loginForm.addEventListener('submit', (e)=>{
     e.preventDefault()
+    const name = document.querySelector('#name').value
     const email = document.querySelector('#email').value
     const password = document.querySelector('#password').value
     const Users = JSON.parse(localStorage.getItem('users')) || []
