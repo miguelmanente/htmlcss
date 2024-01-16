@@ -1,0 +1,15 @@
+.row{
+    background:-moz-linear-gradient(bottom, #FFF, #F00);
+	background:-webkit-linear-gradient(bottom, #FFF, #F00);
+	background:-ms-linear-gradient(bottom, #FFF, #F00);
+	background:-o-linear-gradient(bottom, #FFF, #F00);
+}
+
+.card{
+    top: 1rem;
+    left: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+}
+
