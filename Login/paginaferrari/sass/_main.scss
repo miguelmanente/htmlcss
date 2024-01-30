@@ -8,9 +8,9 @@
 
 .card{
     height: 90%;
-    top: 7rem;
+    top: 8rem;
     left: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     padding: 1rem;
     background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
 }
@@ -18,18 +18,25 @@
 .card-body h5{
     font-size: 1.5rem;
     font-weight: bold;
-    color:#F00;
+    color: #000;;
 }
 .container-fluid img{
-   border-radius: 30px;
-   box-shadow: 15px 5px 9px white;
+   border-radius: 20px;
+   box-shadow: lightgoldenrodyellow 10px 15px 20px;
+   cursor: pointer;
+   transition:all 2s ease;
+   -moz-transition:-moz-transform 0.3s ease-in-out 0.1s;
+   -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s;
+   -ms-transition:-ms-transform 0.3s ease-in-out 0.1s;
+   -o-transition:-o-transform 0.3s ease-in-out 0.1s;
 }
 
 .container-fluid img:hover{
-    transition:all 2s ease-out;
-    cursor: pointer;
-    padding-bottom:10px ;
-    padding-left: 5px;
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
 }
 
 
